@@ -1,6 +1,6 @@
 # Clutterize
 
-Just a few simple CSS rules that spark joy.
+CSS that sparks joy.
 
 ## Features
 
@@ -8,6 +8,12 @@ Just a few simple CSS rules that spark joy.
 - Lightweight & fast
 - Easy to use
 - Open source
+
+## Sources
+
+- [Type Scale](https://typescale.com/) - define different scales, and typeset
+- [PX to Em Conversions](http://pxtoem.com/)
+- [Design Systems](https://www.designsystems.com/) - A design systems publication by Figma
 
 ## Author
 
