@@ -1,4 +1,17 @@
-/* Reset Browser Defaults */
+/* custom properties */
+
+:root {
+  --gap: 1rem;
+
+  --clr-black: black;
+  --clr-primary-dark: darkgrey;
+  --clr-primary: grey;
+  --clr-primary-light: lightgrey;
+  --clr-secondary-dark: deeppink;
+  --clr-secondary: hotpink;
+  --clr-secondary-light: lightpink;
+  --clr-white: white;
+}
 
 /* Box sizing */
 *,
@@ -76,7 +89,7 @@ select {
 /* Utility Classes */
 .flex {
   display: flex;
-  gap: var(--gap, 1rem);
+  gap: var(--gap, rem);
 }
 
 .grid {
@@ -88,4 +101,9 @@ select {
   padding-inline: 2rem;
   margin-inline: auto;
   max-width: 80rem;
+}
+
+.clr-swatch {
+  padding: 2rem;
+  width: fit-content;
 }
