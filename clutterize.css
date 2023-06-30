@@ -71,9 +71,9 @@ html {
 } /* 16px */
 
 body {
-  background: white;
+  background: var(--clr-white, white);
   line-height: 1.5;
-  color: #000000;
+  color: var(--clr-black, black);
   font-family: var(--font-family-sans-serif);
   min-height: 100dvh;
 }
@@ -100,7 +100,7 @@ select {
 /* Utility Classes */
 .flex {
   display: flex;
-  gap: var(--gap, rem);
+  gap: var(--gap, 1rem);
 }
 
 .grid {
@@ -112,9 +112,4 @@ select {
   padding-inline: 2rem;
   margin-inline: auto;
   max-width: 80rem;
-}
-
-.clr-swatch {
-  padding: 2rem;
-  width: fit-content;
 }
