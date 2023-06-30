@@ -14,6 +14,7 @@ h2,
 h3,
 h4,
 h5,
+h6,
 p,
 figure,
 picture {
@@ -70,4 +71,21 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* Utility Classes */
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.container {
+  padding-inline: 2rem;
+  margin-inline: auto;
+  max-width: 80rem;
 }
