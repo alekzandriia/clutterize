@@ -85,6 +85,41 @@ select {
   font: inherit;
 }
 
+/* links */
+/* this order matters because styles build on top of each other */
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+a:link {
+  text-decoration: none;
+  outline: none;
+}
+
+a:visited {
+  color: var(--clr-primary-dark);
+}
+
+a:focus {
+  color: var(--clr-secondary-light);
+}
+
+a:hover {
+  color: var(--clr-secondary-dark);
+}
+
+a:active {
+  color: var(--clr-primary-light);
+}
+
+.external-link {
+  background: url("./icons/external-link.svg") no-repeat 100% 0;
+  background-size: 1rem;
+  padding-right:1.25rem;
+}
+
+
 /* Remove Animations */
 @media (prefers-reduced-motion: reduce) {
   *,
