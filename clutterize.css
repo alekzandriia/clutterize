@@ -122,6 +122,7 @@ select {
 a {
   text-decoration: none;
   outline: none;
+  color: var(--clr-secondary);
 }
 
 a:link {
@@ -131,10 +132,12 @@ a:link {
 
 a:visited {
   color: var(--clr-primary-dark);
+  text-decoration: none;
 }
 
 a:focus {
   color: var(--clr-secondary-light);
+  text-decoration: underline;
 }
 
 a:hover {
@@ -144,10 +147,11 @@ a:hover {
 
 a:active {
   color: var(--clr-primary-light);
+  text-decoration: underline;
 }
 
 /* buttons */
-button {
+button, input[type="submit"] {
   background: var(--clr-secondary);
   border-radius: 0.25rem;
   border: 0.125rem solid var(--clr-black);
@@ -155,7 +159,7 @@ button {
   padding: 0.25rem 0.5rem;
 }
 
-button:hover {
+button:hover, input[type="submit"]:hover {
   background: var(--clr-secondary-light);
 }
 
