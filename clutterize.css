@@ -83,6 +83,13 @@ button,
 textarea,
 select {
   font: inherit;
+  font-size: 100%;
+}
+
+input,
+textarea,
+select {
+  display: block;
 }
 
 /* links */
@@ -107,18 +114,25 @@ a:focus {
 
 a:hover {
   color: var(--clr-secondary-dark);
+  text-decoration: underline;
 }
 
 a:active {
   color: var(--clr-primary-light);
 }
 
-.external-link {
-  background: url("./icons/external-link.svg") no-repeat 100% 0;
-  background-size: 1rem;
-  padding-right:1.25rem;
+/* buttons */
+button {
+  background: var(--clr-secondary);
+  border-radius: 0.25rem;
+  border: 0.125rem solid var(--clr-black);
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
 }
 
+button:hover {
+  background: var(--clr-secondary-light);
+}
 
 /* Remove Animations */
 @media (prefers-reduced-motion: reduce) {
@@ -137,7 +151,6 @@ a:active {
   display: flex;
   gap: var(--gap, 1rem);
 }
-
 .grid {
   display: grid;
   gap: var(--gap, 1rem);
@@ -147,4 +160,11 @@ a:active {
   padding-inline: 2rem;
   margin-inline: auto;
   max-width: 80rem;
+}
+
+.external-link {
+  background: url("./icons/external-link.svg") no-repeat 100% 0;
+  background-size: 1rem;
+  padding-right:1.125rem;
+  max-width: fit-content;
 }
